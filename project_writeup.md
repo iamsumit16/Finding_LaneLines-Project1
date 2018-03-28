@@ -25,16 +25,12 @@ The goals / steps of this project are the following:
 
 My pipeline consisted of 7 steps. First, I converted the images to HSV color space so that I could apply the color masks for white and yellow colors. 
 The second step was to apply the gaussian blur to smoothen out and reduce the noise in the image. After that, a masked image
-I got as a result was used as an input to apply the canny edge detection function. This gave us the edges in the image where there are strongest gradient 
-changes in the colors.
-We then apply a region of interest in which we would want to detect the lanes.
-Step 6 is to get the hough lines. Hough lines are representation of points we got during canny edge detection. Through this function we got the coordinates for the numerous lines and finally the draw_lines() 
-function is used within the hough lines function to remove the unwanted lines and get the two extrapolated solid lines within which we would like 
+I got as a result was used as an input to apply the canny edge detection function on. This gave us the edges in the image where there are strongest color gradients in the image. We then apply a region of interest in which we would want to detect the lanes. Step 6 is to get the hough lines. Hough lines are representation of points we got during canny edge detection. Through this function we got the coordinates for the numerous lines and finally the draw_lines() function is used within the hough lines function to remove the unwanted lines and get the two extrapolated solid lines within which we would like 
 our vehicle to drive. 
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by first dividing the lines into 
-left and right categories by their slopes. Then, I applied slope max and min limits to remove any large deviation that could occur.
-These coordinates were used in the function fitLine to the line parameters, and then the parameters were appended in deque which like a more efficient and faster list.
+left and right categories by their slopes. Then, I applied slope max and min limits to remove any large deviation that could occur in the averaged slopes.
+These coordinates were used in the function fitLine() to the line parameters. The line parameters were appended in deque which like a more efficient and faster list, and were used to calculate the unknown coordinates for the single lines and the slope for them as well.
 These were averaged across the 10 frames to stabilize the lines and reduce the jitter. Without this, they appear to move around really fast as the parameters change with every frame.
 
 I have attached how an image goes through the transformation using this pipeline:
