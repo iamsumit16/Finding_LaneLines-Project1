@@ -39,8 +39,6 @@ These were averaged across the 10 frames to stabilize the lines and reduce the j
 
 I have attached how an image goes through the transformation using this pipeline:
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
 ![alt text][image1]
 
 
@@ -59,4 +57,4 @@ Possible improvements that I would suggest is to use algorithm to:
 a.Incorporate curves the plotted lines.
 b. Have a variable field of view according to the traffic to know what our driving space can be which also includes other lanes.
 c. be able to pick up the lane colors in almost all weather and light conditions 
-d. 
+
