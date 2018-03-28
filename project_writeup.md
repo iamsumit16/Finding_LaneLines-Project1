@@ -50,7 +50,10 @@ Also, the parameters chosen for hough lines and region of interest are hard-code
 ### 3. Suggest possible improvements to your pipeline
 
 Possible improvements that I would suggest is to use algorithm to: 
-a.Incorporate curves the plotted lines.
+
+a. Incorporate curves the plotted lines.
+
 b. Have a variable field of view according to the traffic to know what our driving space can be which also includes other lanes.
+
 c. be able to pick up the lane colors in almost all weather and light conditions 
 
