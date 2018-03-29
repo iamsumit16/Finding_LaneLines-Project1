@@ -28,14 +28,12 @@ The second step was to apply the gaussian blur to smoothen out and reduce the no
 I got as a result was used as an input to apply the canny edge detection function. This gave us the edges in the image where there are strongest gradient 
 changes in the colors.
 We then apply a region of interest in which we would want to detect the lanes.
-Step 6 is to get the hough lines. Hough lines are representation of points we got during canny edge detection. Through this function we got the coordinates for the numerous lines and finally the draw_lines() 
-function is used within the hough lines function to remove the unwanted lines and get the two extrapolated solid lines within which we would like 
-our vehicle to drive. 
+Step 6 is to get the hough lines. Hough lines are representation of points we got during canny edge detection. Through this function we got the coordinates for the numerous lines and finally the draw_lines() function is used within the hough lines function to remove the unwanted lines and get the two extrapolated solid lines within which we would like our vehicle to drive. 
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by first dividing the lines into 
 left and right categories by their slopes. Then, I applied slope max and min limits to remove any large deviation that could occur.
-These coordinates were used in the function fitLine to the line parameters, and then the parameters were appended in deque which like a more efficient and faster list.
-These were averaged across the 10 frames to stabilize the lines and reduce the jitter. Without this, they appear to move around really fast as the parameters change with every frame.
+These coordinates were used in the function fitLine() to calculate the line parameters by fitting a line to the 2D points. And then, the parameters obtained (slopes and intercepts) were appended in deque which like a more efficient and faster list.
+These were averaged across the 15 frames to stabilize the lines and reduce the jitter. Without this, they appear to move around really fast as the parameters change with every frame.
 
 I have attached how an image goes through the transformation using this pipeline:
 
