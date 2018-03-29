@@ -42,6 +42,19 @@ I have attached how an image goes through the transformation using this pipeline
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
 ![alt text][image1]
+![Initial Image](https://raw.githubusercontent.com/iamsumit16/Udacity-CarND-LaneLines-Project1/master/output_images/Initial.jpg)
+
+![HSV Image](https://raw.githubusercontent.com/iamsumit16/Udacity-CarND-LaneLines-Project1/master/output_images/HSV.jpg)
+
+![Blurred Image after Gaussian Blur](https://github.com/iamsumit16/Udacity-CarND-LaneLines-Project1/blob/master/output_images/Blured.jpg)
+
+![Image After Canny Edge Detection](https://github.com/iamsumit16/Udacity-CarND-LaneLines-Project1/blob/master/output_images/Canny.jpg)
+
+![Image after applying ROI mask](https://github.com/iamsumit16/Udacity-CarND-LaneLines-Project1/blob/master/output_images/Masked.jpg)
+
+![Hough Lines])(https://github.com/iamsumit16/Udacity-CarND-LaneLines-Project1/blob/master/output_images/Hough%20Lines.jpg)
+
+![Final Image](https://github.com/iamsumit16/Udacity-CarND-LaneLines-Project1/blob/master/output_images/Final%20Image.jpg)
 
 
 ### 2. Identify potential shortcomings with your current pipeline
