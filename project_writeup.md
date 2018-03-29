@@ -39,9 +39,6 @@ These were averaged across the 10 frames to stabilize the lines and reduce the j
 
 I have attached how an image goes through the transformation using this pipeline:
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-![alt text][image1]
 ![Initial Image](https://raw.githubusercontent.com/iamsumit16/Udacity-CarND-LaneLines-Project1/master/output_images/Initial.jpg)
 
 ![HSV Image](https://raw.githubusercontent.com/iamsumit16/Udacity-CarND-LaneLines-Project1/master/output_images/HSV.jpg)
