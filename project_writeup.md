@@ -49,7 +49,7 @@ I have attached how an image goes through the transformation using this pipeline
 
 ![Image after applying ROI mask](https://github.com/iamsumit16/Udacity-CarND-LaneLines-Project1/blob/master/output_images/Masked.jpg)
 
-![Hough Lines])(https://github.com/iamsumit16/Udacity-CarND-LaneLines-Project1/blob/master/output_images/Hough%20Lines.jpg)
+![Hough Lines](https://github.com/iamsumit16/Udacity-CarND-LaneLines-Project1/blob/master/output_images/Hough%20Lines.jpg)
 
 ![Final Image](https://github.com/iamsumit16/Udacity-CarND-LaneLines-Project1/blob/master/output_images/Final%20Image.jpg)
 
@@ -59,9 +59,7 @@ I have attached how an image goes through the transformation using this pipeline
 
 The algorithm that has been implemented here is a very specific scenario based hard-coded algorithm, which just takes into
 picture a specific field of view, the straight or near-to straight road, a normal sunny day with visible lines.
-This will not work in different weather conditions (like in Midwest USA!?) when lanes are not visible, curvy roads, 
-when there is traffic on the road, during night, during rains which cause the camera to be fooled by reflection.
-Also, the parameters chosen for hough lines and region of interest are hard-coded and based on the images provided.
+This will not work in different weather conditions (like in Midwest USA!?) when lanes are not visible, when there are roads with a sharper turn, when there is traffic on the road, during night, during rains which cause the camera to be fooled by reflection. Also, the parameters chosen for hough lines and region of interest are hard-coded and based on the images provided.
 
 ### 3. Suggest possible improvements to your pipeline
 
@@ -69,4 +67,4 @@ Possible improvements that I would suggest is to use algorithm to:
 a.Incorporate curves the plotted lines.
 b. Have a variable field of view according to the traffic to know what our driving space can be which also includes other lanes.
 c. be able to pick up the lane colors in almost all weather and light conditions 
-d. 
+
